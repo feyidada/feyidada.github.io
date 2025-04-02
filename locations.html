@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Our Bakeries</title>
+  <link rel="stylesheet" href="matchastyles.css">
+</head>
+<body>
+<header>
+  <h1>Our Bakery Locations</h1>
+  <nav>
+    <a href="homepage.html">Home</a>
+    <a href="recipe.html">Recipe</a>
+    <a href="locations.html">Find Us</a>
+  </nav>
+</header>
+
+<main>
+  <div class="map-container">
+    <h2>Visit Us</h2>
+    <div id="map"></div>
+    <p>We have locations in Tokyo, Kyoto, and Osaka!</p>
+  </div>
+
+  <div class="locations-list">
+    <div class="location">
+      <h3>Tokyo Bakery</h3>
+      <p>123 Matcha Street, Shibuya</p>
+      <p>Open: 9am-7pm daily</p>
+    </div>
+    <div class="location">
+      <h3>Kyoto Bakery</h3>
+      <p>456 Green Tea Lane, Gion</p>
+      <p>Open: 10am-6pm daily</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2023 Matcha Cheesecake Delight</p>
+</footer>
+
+<script>
+  function initMap() {
+    const tokyo = { lat: 35.681236, lng: 139.767125 };
+    const kyoto = { lat: 35.0116, lng: 135.7681 };
+
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 6,
+      center: tokyo,
+    });
+
+    new google.maps.Marker({
+      position: tokyo,
+      map: map,
+      title: "Tokyo Bakery",
+      icon: {
+        url: "bakery-icon.png",
+        scaledSize: new google.maps.Size(32, 32),
+      }
+    });
+
+    new google.maps.Marker({
+      position: kyoto,
+      map: map,
+      title: "Kyoto Bakery",
+      icon: {
+        url: "bakery-icon.png",
+        scaledSize: new google.maps.Size(32, 32),
+      }
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChkLk6GHDiAiZsQjR9r-GhubruJrZp_2w&callback=initMap" async defer></script>
+</body>
+</html>

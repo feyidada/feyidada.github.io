@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1ebe1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8ba888;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #8ba888;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Home Page Styles */
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.intro {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.newsletter {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #f1ebe1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #8ba888;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Recipe Page Styles */
+.recipe-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.ingredients {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.instructions {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.tips {
+    background-color: #f0fff0;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #8ba888;
+}
+
+/* Locations Page Styles */
+.map-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.locations-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.location {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    flex: 1;
+    max-width: 300px;
+}
